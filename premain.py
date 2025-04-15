@@ -28,12 +28,16 @@ def run_pipeline(X_train, X_test, Y_train, Y_test, dic):
     return model_pipe
 
 
-def execute(addrs):
-    with open(addrs, "r", encoding="utf-8") as file:
-        rtf_content = file.read()
-        
-    text = rtf_to_text(rtf_content)
-    dic = json.loads(text)
+def execute(addrs, json = False):
+    if not json:
+        with open(addrs, "r", encoding="utf-8") as file:
+            rtf_content = file.read()
+            
+        text = rtf_to_text(rtf_content)
+        dic = json.loads(text)
+
+    else:
+        dic = json.load(open(addrs, 'r', encoding='utf-8'))
 
     k = preprocess_pipeline(dic)
     u = k.data_selection()
