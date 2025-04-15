@@ -14,7 +14,7 @@ This project builds a complete, flexible, and modular machine learning pipeline 
 - clone this repo and in same address run this python file
 - OR JUST REPLACE THE ADDRESS IN IPYNB AND RUN
 
-```
+```python
 from premain import execute
 
 # if you are using rich text format then...
