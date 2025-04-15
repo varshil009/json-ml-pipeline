@@ -9,7 +9,7 @@ This project builds a complete, flexible, and modular machine learning pipeline 
 - **algoparams_from_ui.json.rtf**: Main JSON file containing all experiment configs (dataset path, target variable, feature interactions, models, hyperparameters, etc.).
 ---
 
-## 🚀 How It Execute
+## 🚀 How to Execute
 - Just ensure you have all the dependecies - sklearn, numpy, pandas, striprtf(to handle rich text format), xgboost, json
 - clone this repo and in same address run this python file
 - OR JUST REPLACE THE ADDRESS IN IPYNB AND RUN
